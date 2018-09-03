@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <style type="text/css">
+    .continar{
+        margin: 5%;
+        background-color: rgba(34, 13, 13, 0.753);
+        padding: 1%;
+        height: 70%
+    }
+    .child{
+        margin-left: 50px;
+        display: block;
+        margin: 1%;
+    }
+    .child > label{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        color: aliceblue;
+    }
+    .child > input{
+        width: 50%;
+        border-radius: 5px;
+        background-color: lightslategrey;
+        color: white; 
+        font-size: 18px;
+    }
+    .child:last-child{
+        margin-left: 190px
+    }
+    .child:last-child > input:hover{
+        background-color: rgba(1, 1, 37, 0.267);
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+    </style>
+</head>
+<body>
+    <div class="continar">
+        <form action="/" method="post">
+            <div class="child">
+                <label for="user">UserName: </label>
+                <input type="text" name="user" id="user">
+            </div><br>
+            <div class="child">
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass">
+            </div><br>
+            <div class="child">
+                <input type="submit" value="submit" name="submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

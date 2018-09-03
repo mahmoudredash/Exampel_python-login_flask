@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page</title>
+    <style>
+        .tt{
+            float: right;
+            margin-right: 20px;
+            width: 90px;
+        }
+        .tt >button{
+            background-color: rgba(79, 64, 110, 0.541);
+            color: #fff;
+            border-radius: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  welcom to Adman Page  {{name}} 
+<a class="tt" href="{{ url_for('logout') }}"><button>Logout</button></a>  
+</body>
+</html>
